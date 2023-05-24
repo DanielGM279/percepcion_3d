@@ -1,0 +1,9 @@
+<?xml version="1.0"?>
+<launch>
+
+    <param name="robot_description" command="xacro '$(find percepcion_3d)/urdf/robot.urdf.xacro'"/>
+    <arg name="rviz_config_file" default="$(find percepcion_3d)/config/robot.rviz"/>
+    
+    <node pkg="rviz" type="rviz" name="rviz" args="-d $(arg rviz_config_file)"/>
+
+</launch>

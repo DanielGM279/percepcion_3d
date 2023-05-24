@@ -1,0 +1,8 @@
+<?xml version="1.0"?>
+<launch>
+
+    <include file="$(find percepcion_3d)/launch/controller.launch"/>
+    <include file="$(find percepcion_3d)/launch/laser_assembler.launch"/>
+    <include file="$(find percepcion_3d)/launch/rviz.launch"/>
+
+</launch>
